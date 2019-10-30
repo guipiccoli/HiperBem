@@ -118,7 +118,6 @@ export default class AnamnesisFormCoordinator extends Component {
         const currentHeight = this.inputProducers.textInput.centimeterToMeter(this.anamnesisRecord.height);
         const currentWeight = this.inputProducers.textInput.decimalNumber(this.anamnesisRecord.weight, 2);
 
-        console.log(this.currentHeight);
         this.props.navigation.push("MultiTextInput", {
             ...this.defaultParams,
             callout: "Informe seu peso e altura",
